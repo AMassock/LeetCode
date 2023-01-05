@@ -4,7 +4,7 @@ There are some spherical balloons taped onto a flat wall that represents the XY-
 
 Arrows can be shot up _directly vertically_ (in the positive y-direction) from different points along the x-axis. A balloon with `xstart` and `xend` is burst by an arrow shot at `x` if `xstart <= x <= xend`. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.
 
-Given the array `points`, return the **_minimum_ number of arrows that must be shot to burst all balloons**.
+Given the array `points`, return the **_minimum_** _number of arrows that must be shot to burst all balloons_.
 
 #### Example 1:
 
