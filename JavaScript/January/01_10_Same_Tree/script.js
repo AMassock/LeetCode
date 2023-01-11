@@ -12,20 +12,11 @@
  * @return {boolean}
  */
 var isSameTree = function(p, q) {
-    let arr1 = p;
-    let arr2 = q;
-    let result = false;
-    for (let i = 0; (i < arr1.length && i < arr2.length); i++) {
-        if (arr1 == arr2) {
-        return true
-    } else {
-        return false
-    }
-}    
+    return JSON.stringify(p) === JSON.stringify(q);
 };
 
 // Tests;
 
 // isSameTree([1,2,3], [1,2,3]);
-// isSameTree([1,2], [1,null,2]);
+isSameTree([1,2], [1,null,2]);
 // isSameTree([1,2,1], [1,1,2]);
