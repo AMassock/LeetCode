@@ -3,7 +3,18 @@
  * @return {Function}
  */
 var once = function (fn) {
-  return function (...args) {};
+  let called = false;
+  let result;
+
+  return function (...args) {
+    if (!called) {
+      result = fn(...args);
+      called = true;
+      return result;
+    } else {
+      return undefined;
+    }
+  };
 };
 
 /**
